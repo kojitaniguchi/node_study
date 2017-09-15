@@ -3,6 +3,7 @@ const http = require('http');
 const Cookies = require('cookies');
 const trackingIdKey = 'tracking_id';
 
+
 const server = http.createServer((req, res) => {
   const now = new Date().getTime();
   res.setHeader('Set-Cookie', 'last_access=' + now + ';expires=Mon, 07 Jan 2036 00:00:00 GMT;');
